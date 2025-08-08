@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD AFRICA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+        header, main, footer {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: left;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 40px;
+            text-align: left;
+            list-style-position: outside;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Showroom</h1>
+        <p>Welcome to CMD Motors, where quality meets performance. Explore our wide range of vehicles designed to suit every lifestyle, backed by expert service and a commitment to excellence. Your journey starts here</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Vehicle Sales – Offers a variety of new and used cars to match customer needs and preferences.</li>
+                <li>Test Drives – Lets customers experience a vehicle’s performance before buying.</li>
+                <li>After-Sales Service – Ensures vehicles stay in top condition through maintenance and repairs.</li>
+                <li>Financing & Leasing – Provides flexible payment options to make vehicle ownership affordable</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Project Timeline</h2>
+            <ol>
+                <li>Planning - Define goals and scope</li>
+                <li>Design - Create wireframes and mockups</li>
+                <li>Development - Code and implement features</li>
+                <li>Testing - Ensure quality and functionality</li>
+                <li>Launch - Deploy the final product</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Team Members</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Sales Executive</td>
+                        <td>5 years</td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Showroom Manager</td>
+                        <td>7 years</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>Finance Officer</td>
+                        <td>4 years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media Showcase</h2>
+            <p>Check out our latest project in action:</p>
+            <img src="https://cdn.pixabay.com/photo/2019/11/02/19/24/car-4597208_1280.jpg" alt="Sample project screenshot">
+            <video controls>
+                <source src="https://cdn.pixabay.com/video/2015/11/27/1406-147169807_medium.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required minlength="2" placeholder="Enter your full name" autocomplete="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments or Questions:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about your needs" minlength="10"></textarea>
+
+                    <label for="referral">How did you hear about us?</label>
+                    <select id="referral" name="referral" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="website">Website</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                    </select>
+                </fieldset>
+
+                <input type="submit" value="Submit Request">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Showcase Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
